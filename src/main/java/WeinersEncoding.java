@@ -20,7 +20,8 @@ public class WeinersEncoding {
                 'ь', 'э', 'ю', 'я'};
 
         char[][] VignereMatrix = new char[RussianAlph.length][RussianAlph.length];
-        for (int i = 0, k=i; i < VignereMatrix.length; i++) {
+        for (int i = 0, k; i < VignereMatrix.length; i++) {
+            k = i;
             for (int j = 0; j < VignereMatrix[i].length; j++) {
                 VignereMatrix[i][j] = RussianAlph[k];
                 k++;
